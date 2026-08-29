@@ -1,0 +1,44 @@
+# Secrets & local config
+.env
+.env.*
+!.env.example
+
+# Local data (DB, resumes, browser login cookies)
+*.db
+backend/data/**/*.db
+backend/data/resumes/*
+!backend/data/resumes/.gitkeep
+backend/data/browser_sessions/*
+!backend/data/browser_sessions/.gitkeep
+backend/data/**/*.pdf
+backend/data/**/*.png
+backend/data/**/*.jpg
+backend/data/**/*.jpeg
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.turbo/
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Local tooling (portable git/gh downloads)
+.tools/
